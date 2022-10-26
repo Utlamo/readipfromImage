@@ -8,7 +8,7 @@ app.get('/',function(req, res) {
     const ipAddress = req.socket.remoteAddress;
     const r = fs.createReadStream('1.jpg');
     console.log(ipAddress);
-    res.sendFile(__dirname + '//1.jpg');
+    res.sendFile(__dirname  + '/1.jpg');
 });
 
 app.listen(3000, () => console.log(`Server is listening on port 3000`))
